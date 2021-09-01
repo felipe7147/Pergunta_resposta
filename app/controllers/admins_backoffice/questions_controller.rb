@@ -1,6 +1,8 @@
 class AdminsBackoffice::QuestionsController < 
 	AdminsBackofficeController
 	 before_action :set_question, only: [:edit, :update, :destroy]
+	 before_action :get_subjects, only: [:new, :edit]
+
 	 def index
 	 @questions = 
 	Question.all.order(:description).page(params[:page])
@@ -43,5 +45,9 @@ private
 	 end
 	 def set_question
 	 @question = Question.find(params[:id])
+	 end
+
+	 def get_subjects
+	 	@subjects = Subject.all
 	 end
 end
