@@ -42,6 +42,8 @@ gem 'faker'
 gem 'kaminari'
 gem 'kaminari-i18n'
 gem "cocoon"
+gem 'webpacker'
+
 
 
 group :development, :test do
