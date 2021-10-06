@@ -2,6 +2,7 @@
   "name": "time_to_answer",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "4.0.0",
     "bootstrap": "3.3.7",
     "bootstrap-growl-ifightcrime": "^1.1.0",
     "fastclick": "1.0.6",
